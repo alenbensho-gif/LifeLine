@@ -1,0 +1,25 @@
+/* Food Guide page (from the Food Guide After Blood Loss page), scoped with the fg- prefix */
+.fg-levels{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:18px}
+.fg-lv{border:2px solid #f1c8ce;background:#fff;color:var(--ink);border-radius:14px;padding:14px;text-align:left;cursor:pointer;font:inherit;transition:transform .15s,box-shadow .15s}
+.fg-lv:hover{transform:translateY(-2px);box-shadow:0 8px 18px #b91f3522}
+.fg-lv b{display:block;font-size:14px;margin:4px 0 2px}
+.fg-lv span{font-size:11px;color:var(--muted);line-height:1.5}
+.fg-lv .fg-drop{font-size:16px}
+.fg-lv[aria-pressed="true"]{border-color:var(--red-dark);background:linear-gradient(135deg,#b91f35,#e53950);color:#fff;box-shadow:0 8px 22px #b91f3544}
+.fg-lv[aria-pressed="true"] span{color:#fff}
+.fg-alert{border-left:6px solid var(--red);background:#fff0f1;padding:14px 16px;border-radius:10px;margin-bottom:16px;font-size:13px;line-height:1.7}
+.fg-alert.ok{border-color:#2e7d32;background:#eef8f0}
+.fg-alert.warn{border-color:#e65100;background:#fff4ea}
+.fg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.fg-food{background:#fff0f1;border:1px solid #f1c8ce;border-radius:14px;padding:12px;text-align:center}
+.fg-food:nth-child(even){background:linear-gradient(160deg,#c62839,#ef5360);border-color:#c62839;color:#fff}
+.fg-food:nth-child(even) small{color:#ffe5e8}
+.fg-pic{font-size:2.6rem;line-height:1.1;background:#fff;border-radius:12px;padding:8px 0;margin-bottom:8px}
+.fg-food b{display:block;font-size:12px}
+.fg-food small{display:block;margin-top:4px;font-size:10px;color:var(--muted);line-height:1.5}
+.fg-two{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:16px 0}
+.fg-panel{margin-bottom:16px}
+.fg-panel h3{font-size:15px;margin:0 0 10px;color:var(--red)}
+.fg-panel p,.fg-panel li{font-size:12px;line-height:1.7;color:#3b474e}
+.fg-panel ul{margin:0;padding-left:18px}
+#fgOut .fg-two .fg-panel{margin:0}
